@@ -9,7 +9,7 @@ public class TorneoApp extends Application {
     public void start(Stage stage) throws Exception {
 
         FXMLLoader loader = new FXMLLoader(
-                TorneoApp.class.getResource("TorneoView.fxml")
+                TorneoApp.class.getResource("torneo-view.fxml")
         );
 
         Scene scene = new Scene(loader.load(), 1080, 650);
