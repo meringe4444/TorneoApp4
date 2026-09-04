@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>uam.edu.ni.torneoapp4/uam.edu.ni.torneoapp4.HelloApplication</mainClass>
+                            <mainClass>uam.edu.ni.torneoapp4/uam.edu.ni.torneoapp4.TorneoApp</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
