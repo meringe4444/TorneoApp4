@@ -30,3 +30,30 @@
             onAction="#registrar"/>
 
     <TableView fx:id="tabla">
+        <columns>
+
+            <TableColumn fx:id="colNombre"
+                         text="Nombre"/>
+
+            <TableColumn fx:id="colEdad"
+                         text="Edad"/>
+
+            <TableColumn fx:id="colCategoria"
+                         text="Categoría"/>
+
+            <TableColumn fx:id="colModalidad"
+                         text="Modalidad"/>
+
+            <TableColumn fx:id="colDisciplina"
+                         text="Disciplina"/>
+
+            <TableColumn fx:id="colCaracteristicas"
+                         text="Características"/>
+
+            <TableColumn fx:id="colEstado"
+                         text="Estado"/>
+
+        </columns>
+    </TableView>
+
+</VBox>
