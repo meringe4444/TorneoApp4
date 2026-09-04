@@ -1,16 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="uam.edu.ni.torneoapp4.TorneoController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<VBox spacing="10"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="uam.edu.ni.torneoapp4.TorneoApp">
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Label text="Torneo Deportivo"/>
+
+    <TextField fx:id="txtNombre" promptText="Nombre completo"/>
+    <TextField fx:id="txtEdad" promptText="Edad"/>
+    <TextField fx:id="txtTelefono" promptText="88888888"/>
+
+    <ComboBox fx:id="cmbCategoria" promptText="Categoría"/>
+    <ComboBox fx:id="cmbGenero" promptText="Género"/>
+    <ComboBox fx:id="cmbModalidad" promptText="Modalidad"/>
+    <ComboBox fx:id="cmbDisciplina" promptText="Disciplina"/>
+
+    <Label text="Características"/>
+
+    <ListView fx:id="listCaracteristicas"
+              prefHeight="100"/>
+
+    <CheckBox fx:id="chkInscrito"
+              text="Confirmar inscripción"/>
+
+    <Button text="Registrar"
+            onAction="#registrar"/>
+
+    <TableView fx:id="tabla">
+        <columns>
+
+            <TableColumn fx:id="colNombre"
+                         text="Nombre"/>
+
+            <TableColumn fx:id="colEdad"
+                         text="Edad"/>
+
+            <TableColumn fx:id="colCategoria"
+                         text="Categoría"/>
+
+            <TableColumn fx:id="colModalidad"
+                         text="Modalidad"/>
+
+            <TableColumn fx:id="colDisciplina"
+                         text="Disciplina"/>
+
+            <TableColumn fx:id="colCaracteristicas"
+                         text="Características"/>
+
+            <TableColumn fx:id="colEstado"
+                         text="Estado"/>
+
+        </columns>
+    </TableView>
+
 </VBox>
