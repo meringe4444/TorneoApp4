@@ -7,11 +7,11 @@
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="uam.edu.ni.torneoapp4.TorneoController">
 
-    <Label text="Torneo Deportivo"/>
+    <Label text="TorneoApp"/>
 
     <TextField fx:id="txtNombre" promptText="Nombre completo"/>
     <TextField fx:id="txtEdad" promptText="Edad"/>
-    <TextField fx:id="txtTelefono" promptText="88888888"/>
+    <TextField fx:id="txtTelefono" promptText="Introduzca su numero telefonico"/>
 
     <ComboBox fx:id="cmbCategoria" promptText="Categoría"/>
     <ComboBox fx:id="cmbGenero" promptText="Género"/>
@@ -21,7 +21,8 @@
     <Label text="Características"/>
 
     <ListView fx:id="listCaracteristicas"
-              prefHeight="100"/>
+              prefWidth="300"
+              prefHeight="240"/>
 
     <CheckBox fx:id="chkInscrito"
               text="Confirmar inscripción"/>
@@ -32,26 +33,17 @@
     <TableView fx:id="tabla">
         <columns>
 
-            <TableColumn fx:id="colNombre"
-                         text="Nombre"/>
+            <TableColumn fx:id="colNombre" text="Nombre"/>
+            <TableColumn fx:id="colEdad" text="Edad"/>
 
-            <TableColumn fx:id="colEdad"
-                         text="Edad"/>
+            <TableColumn fx:id="colTelefono" text="Número"/>
+            <TableColumn fx:id="colGenero" text="Género"/>
 
-            <TableColumn fx:id="colCategoria"
-                         text="Categoría"/>
-
-            <TableColumn fx:id="colModalidad"
-                         text="Modalidad"/>
-
-            <TableColumn fx:id="colDisciplina"
-                         text="Disciplina"/>
-
-            <TableColumn fx:id="colCaracteristicas"
-                         text="Características"/>
-
-            <TableColumn fx:id="colEstado"
-                         text="Estado"/>
+            <TableColumn fx:id="colCategoria" text="Categoría"/>
+            <TableColumn fx:id="colModalidad" text="Modalidad"/>
+            <TableColumn fx:id="colDisciplina" text="Disciplina"/>
+            <TableColumn fx:id="colCaracteristicas" text="Características"/>
+            <TableColumn fx:id="colEstado" text="Estado"/>
 
         </columns>
     </TableView>

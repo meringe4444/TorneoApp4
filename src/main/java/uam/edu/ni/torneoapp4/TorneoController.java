@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-public class TorneoController {
+public class  TorneoController {
 
     @FXML private TextField txtNombre, txtEdad, txtTelefono;
     @FXML private ComboBox<String> cmbCategoria, cmbGenero, cmbModalidad, cmbDisciplina;
@@ -12,8 +12,9 @@ public class TorneoController {
     @FXML private CheckBox chkInscrito;
 
     @FXML private TableView<Participante> tabla;
-    @FXML private TableColumn<Participante, String> colNombre, colCategoria,
-            colModalidad, colDisciplina, colCaracteristicas, colEstado;
+    @FXML private TableColumn<Participante, String> colNombre, colTelefono,
+            colGenero, colCategoria, colModalidad, colDisciplina,
+            colCaracteristicas, colEstado;
     @FXML private TableColumn<Participante, Integer> colEdad;
 
     @FXML
@@ -43,6 +44,8 @@ public class TorneoController {
 
         colNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
         colEdad.setCellValueFactory(new PropertyValueFactory<>("edad"));
+        colTelefono.setCellValueFactory(new PropertyValueFactory<>("telefono"));
+        colGenero.setCellValueFactory(new PropertyValueFactory<>("genero"));
         colCategoria.setCellValueFactory(new PropertyValueFactory<>("categoria"));
         colModalidad.setCellValueFactory(new PropertyValueFactory<>("modalidad"));
         colDisciplina.setCellValueFactory(new PropertyValueFactory<>("disciplina"));

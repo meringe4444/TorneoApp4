@@ -14,7 +14,7 @@ public class TorneoApp extends Application {
                 TorneoApp.class.getResource("torneo-view.fxml")
         );
 
-        Scene scene = new Scene(loader.load(), 1080, 650);
+        Scene scene = new Scene(loader.load(), 875, 740);
 
         stage.setTitle("Torneo Aplicacion");
         stage.setScene(scene);
