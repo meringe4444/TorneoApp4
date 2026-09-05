@@ -5,7 +5,7 @@
 
 <VBox spacing="10"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="uam.edu.ni.torneoapp4.TorneoApp">
+      fx:controller="uam.edu.ni.torneoapp4.TorneoController">
 
     <Label text="Torneo Deportivo"/>
 
