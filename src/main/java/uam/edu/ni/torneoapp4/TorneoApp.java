@@ -5,14 +5,18 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
 public class TorneoApp extends Application {
+
     @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(TorneoApp.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+    public void start(Stage stage) throws Exception {
+
+        FXMLLoader loader = new FXMLLoader(
+                TorneoApp.class.getResource("torneo-view.fxml")
+        );
+
+        Scene scene = new Scene(loader.load(), 1080, 650);
+
+        stage.setTitle("Torneo Aplicacion");
         stage.setScene(scene);
         stage.show();
     }
